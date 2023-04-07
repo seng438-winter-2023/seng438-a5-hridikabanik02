@@ -45,9 +45,13 @@ RDC is a statistical approach that forecasts the likelihood of attaining the rel
 These two failure data assessment techniques are similar, yet are very different when we look into them in more detail below:
 
 1.Both the techniques use the concepts of failure times and Mean Time to Failure(MTTF) in order to evaluate the reliability and performance of the system under test (SUT).
+
 2.Both the techniques require failure data to be gathered during the testing process. However, they differ in the ways this failure data is collected. For reliability growth testing, the systems are continuously monitored  and the failures are recorded as they occur. While for reliability assessment using RDC, failure data is collected only at certain points in time, for example the way we did in predetermined intervals.
+
 3.Once we have gathered the failure data from both the techniques after the testing process, the next step for both the methods is to analyze the data we have. For reliability growth testing, we were able to view the trends and patterns using the different mathematical models. However, for reliability assessment using RDC, the failure data was plotted on a graph to visualize the cumulative number of failures over the (normalized value of) number of input events to assess the system's reliability performance at specific time points during testing.
+
 4.In practice, the reliability growth testing is a very extensive testing technique because it needs a good amount of failure data since it aims to address reliability issues as they arise and work on them continuously to enhance the system’s reliability. Reliability assessment using RDC on the other hand requires only a limited amount of data that is used to plot the data on a graph to see whether it falls on the Rejected or the Accept region, or somewhere in between. That is what determines the whole system’s reliability using an RDC.
+
 5.Lastly, both the methods require some tools to be able to view the failure data and to analyze them. For reliability growth testing, we needed to have an understanding of statistical analysis with tools, how to view reliability trends using the different modeling methods, and other failure data analysis techniques. But for reliability assessment using RDC, we required an understanding of graphical analysis techniques, and just using the RDC-11 tool and its features.
 
 # How the team work/effort was divided and managed
