@@ -52,7 +52,7 @@ We chose Failure Report 3 for this part of the lab, so this is the failure data 
 
 1.RDC for MTTFMin
 
-<img width="277" alt="5" src="https://user-images.githubusercontent.com/101438221/230686000-a5874814-b311-4370-9a32-a41b7b8f2e8d.png">
+![5](https://user-images.githubusercontent.com/101438221/230686000-a5874814-b311-4370-9a32-a41b7b8f2e8d.png)
 
 The graph displays the plot for MTTFmin which is 42 in this case as mentioned before. The plot shown above was created using the failure data that we input and then we determined the MTTFMin through a process of experimentation. The MTTF calculation for this specific graph is 960/24 = 40. Then to find the MTTFMin, we put in values close to the MTTF value to see when the graph had just crossed over from the Continue Test(yellow) region to the Accept(green) region. Based on the trend shown, it appears that the system's reliability is within an acceptable range for our Failure Intensity Objective(FIO), without significantly dipping into the rejection zone.
 
