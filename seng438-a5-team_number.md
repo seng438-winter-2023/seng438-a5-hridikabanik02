@@ -4,7 +4,8 @@
 
 | Group \#:       |   |
 |-----------------|---|
-| Student Names:  | Radia Jannat   |
+| Student Names:  |    |
+|         Radia Jannat        |   |
 |         Hridika Banik        |   |
 |        MD Shaherier Khan         |   |
 |       Mohammad Abbas Kazmi          |   |
