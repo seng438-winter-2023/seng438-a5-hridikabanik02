@@ -45,8 +45,26 @@ In the Model Comparison tab we could see all the data from the models selected i
 The graph above is the Failure Intensity graph that was created after selecting all the models.
 
 # Assessment Using Reliability Demonstration Chart 
+As we have come to learn, a Reliability Demonstration Chart (RDC) is very useful in assessing failure data when we have limited failure data, when the duration of failures is unknown, and to determine if the target failure rate or Mean Time To Failure (MTTF) is met. To examine the system’s reliability performance, failure data is gathered at various time points and then plotted graphically to analyze any trend it shows.
 
-# 
+From the given options, we chose to use the RDC-11 tool for this section of the lab. As mentioned in the lab document, RDC-11 is an Excel worksheet and a macro. The RDC we were given in the excel sheet consisted of the Cumulative Failure Count on the vertical axis, while the Normalized Value of the Number of Input Events is plotted on the horizontal axis. After plotting our data points, with the help of the RDC we were able to visualize the graph of system reliability over a certain number of input events, and then understand the systems performance.
+We chose Failure Report 3 for this part of the lab, so this is the failure data we input into RDC-11 in the Failure Data sheet. The initial dataset had 24 rows of data, where the dataset consisted of each of the failures being listed along with its failure time recorded in seconds. However, the RDC-11 only had 16 rows of data that it accepted. According to Failure Report 3, the last failure was recorded at 903 seconds. Considering an error margin, we assumed the end time for the system to be at 960 seconds. Then we divided the 960 seconds in the 16 rows of the RDC-11 and wrote the cumulative failure count according to the Failure Report 3 data as well. After getting familiarized with how to read the graph and how to work with it, we came to the conclusion that our MTTF was 40 and our MTTFMin was 42.
+
+1.RDC for MTTFMin
+<img width="277" alt="5" src="https://user-images.githubusercontent.com/101438221/230686000-a5874814-b311-4370-9a32-a41b7b8f2e8d.png">
+
+The graph displays the plot for MTTFmin which is 42 in this case as mentioned before. The plot shown above was created using the failure data that we input and then we determined the MTTFMin through a process of experimentation. The MTTF calculation for this specific graph is 960/24 = 40. Then to find the MTTFMin, we put in values close to the MTTF value to see when the graph had just crossed over from the Continue Test(yellow) region to the Accept(green) region. Based on the trend shown, it appears that the system's reliability is within an acceptable range for our Failure Intensity Objective(FIO), without significantly dipping into the rejection zone.
+
+2.RDC for twice of MTTF
+<img width="278" alt="6" src="https://user-images.githubusercontent.com/101438221/230686064-781b3aa4-1b39-43dc-9887-f8460d102e74.png">
+
+The graph above displays the plot for twice the MTTF which is 80 in this case. After locating the MTTFmin plot, the parameters were reworked to achieve twice the original MTTF value. Doing so moved the graph farther into the Rejection(red) zone, which is consistent with the changes we made to the graph. From what we can conclude looking at this graph is that it appears that the system's reliability is not within an acceptable range for our Failure Intensity Objective(FIO), since it significantly rises into the Rejection(red) zone.
+
+3.RDC for half MTTFMin
+<img width="278" alt="7" src="https://user-images.githubusercontent.com/101438221/230686130-b5396252-d9a3-4cc3-b95f-45d05b7b3cfe.png">
+
+The graph above displays the plot for half of MTTFMin which is 21 in this case. After locating the MTTFmin plot, the parameters were reworked again to achieve half the original MTTFMin value. This trend shows a stronger inclination towards the acceptable range, which corresponds to the changes we made to the graph. Hence, we can conclude that it appears that the system's reliability is well within the acceptable range for our Failure Intensity Objective(FIO), since it significantly rises into the Accept(green) zone.
+
 
 # Comparison of Results
 Continuous testing of a system or product to find and correct flaws or failures until the reliability objective is met is known as reliability growth testing (RGT). To find and address flaws and increase the reliability of the system, testing it in various settings, situations, and inputs is required. A reliability growth curve is often used to illustrate the desired continuous increase in reliability over time.
@@ -71,7 +89,6 @@ These two failure data assessment techniques are similar, yet are very different
 # How the team work/effort was divided and managed
 In our team, we divided the workload evenly for the lab report. We initially focused on understanding the installation and usage of the tools, as well as interpreting the data. We then explored the functionalities of each tool and their relevance to system testing. After conducting the experiments and analyzing the results, all team members contributed to compiling a comprehensive lab report with thoroughness and accuracy.
 
-# 
 
 # Difficulties encountered, challenges overcome, and lessons learned
 Various tools can be used to evaluate a system's dependability; however, they are only simulations and should not replace rigorous testing. However, their reliability is not guaranteed as much of the data they produce is calculated and approximated. Additionally, using these tools also requires a comprehensive understanding of each function and result interpretation. Nevertheless, learning about these tools is essential because they are frequently used in industry and becoming familiar with them can be advantageous in the future. The difficulty that we faced was CASRE not working on any of our laptops as it is an old software, and is not compatible with the system. Initially, we encountered some challenges in determining the steps to find the outcomes of the exercises. However, through diligent efforts, we were able to grasp the concepts by referencing the lecture notes and conducting additional research.
