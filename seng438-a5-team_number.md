@@ -58,13 +58,13 @@ The graph displays the plot for MTTFmin which is 42 in this case as mentioned be
 
 2.RDC for twice of MTTF
 
-<img width="278" alt="6" src="https://user-images.githubusercontent.com/101438221/230686064-781b3aa4-1b39-43dc-9887-f8460d102e74.png">
+![6](https://user-images.githubusercontent.com/101438221/230686064-781b3aa4-1b39-43dc-9887-f8460d102e74.png)
 
 The graph above displays the plot for twice the MTTF which is 80 in this case. After locating the MTTFmin plot, the parameters were reworked to achieve twice the original MTTF value. Doing so moved the graph farther into the Rejection(red) zone, which is consistent with the changes we made to the graph. From what we can conclude looking at this graph is that it appears that the system's reliability is not within an acceptable range for our Failure Intensity Objective(FIO), since it significantly rises into the Rejection(red) zone.
 
 3.RDC for half MTTFMin
 
-<img width="278" alt="7" src="https://user-images.githubusercontent.com/101438221/230686130-b5396252-d9a3-4cc3-b95f-45d05b7b3cfe.png">
+![7](https://user-images.githubusercontent.com/101438221/230686130-b5396252-d9a3-4cc3-b95f-45d05b7b3cfe.png)
 
 The graph above displays the plot for half of MTTFMin which is 21 in this case. After locating the MTTFmin plot, the parameters were reworked again to achieve half the original MTTFMin value. This trend shows a stronger inclination towards the acceptable range, which corresponds to the changes we made to the graph. Hence, we can conclude that it appears that the system's reliability is well within the acceptable range for our Failure Intensity Objective(FIO), since it significantly rises into the Accept(green) zone.
 
