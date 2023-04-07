@@ -2,7 +2,7 @@
 
 **Lab. Report \#5 – Software Reliability Assessment**
 
-| Group \#:       | 16  |
+| Group \#:       |   |
 |-----------------|---|
 | Student Names:  |    |
 |         Radia Jannat        |   |
@@ -29,6 +29,20 @@ Upon completing this lab, we have a better comprehension of reliability growth t
 
 
 # Assessment Using Reliability Growth Testing 
+From the given options we decided to use C-SFRAT as our testing tool. Following the instructions on the lab report we were able to successfully set up C-SFRAT. To open a failure dataset in C-SFRAT we decided to change up the data accordingly. C-SFRAT accepts a .csv file, so we moved over the data from Failure Report 3(word doc) to a .csv file and changed the headings of the columns as well. Once the .csv file was ready, we imported that failure dataset on C-SFRAT and this is the graph that was produced:
+
+![1](https://user-images.githubusercontent.com/101438221/230685422-19804a3e-0de7-4708-9ddb-c8d9e9962052.png)
+This graph was seen in the Data Upload and Model Selection tab of C-SFRAT. 
+
+Then we selected all the models listed out under the Select Hazard Functions to produce the graph below:
+![2](https://user-images.githubusercontent.com/101438221/230685465-95e42c03-371f-4a79-a7cf-84daac588ea3.png)
+In the Model Results and Predictions tab, we can view all the models that we selected for our failure data to see which of the models best fit with the graph generated from the failure data. 
+
+![3](https://user-images.githubusercontent.com/101438221/230685486-980ac7d7-d0a8-49f3-9865-9ed18d8528ab.png)
+In the Model Comparison tab we could see all the data from the models selected in a table. Clicking on the header sorts the table in ascending order and that way we could see what models best fit our failure dataset’s graph. We checked the log-likelihood for the biggest number and the AIC for the smallest value, and we can conclude that the model NB2 is the best fit model with our failure dataset.
+
+![4](https://user-images.githubusercontent.com/101438221/230685513-8a13ec37-e6ba-45c3-bb23-cf61ee585acb.png)
+The graph above is the Failure Intensity graph that was created after selecting all the models.
 
 # Assessment Using Reliability Demonstration Chart 
 
