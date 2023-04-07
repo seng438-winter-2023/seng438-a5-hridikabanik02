@@ -12,7 +12,7 @@
 
 # Introduction
 
-# This lab introduced us to the analysis of integration test data using reliability assessment tools and how critical it is to ensure the quality and reliability of systems. We put into practice two methods for assessing failure data: 
+This lab introduced us to the analysis of integration test data using reliability assessment tools and how critical it is to ensure the quality and reliability of systems. We put into practice two methods for assessing failure data: 
 
 1) Reliability growth testing 
 2) Reliability assessment using Reliability Demonstration Chart (RDC)
